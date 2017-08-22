@@ -1,0 +1,8 @@
+choose
+<form method="post" action="/confirm">
+<%choices.each do |value| %>
+
+<p><input type="checkbox" value="<%=value%>" name="confirmed_options[]"><%=value %></p>
+<% end %>
+ <input type ="submit">
+ </form>
